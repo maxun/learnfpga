@@ -14,8 +14,7 @@ entity echotest is
     ftdi_siwua: out STD_LOGIC;
     leds : out  STD_LOGIC_VECTOR (7 downto 0));
     attribute PULLUP: string;
-    attribute PULLUP of sw: signal is "TRUE"
-  );
+    attribute PULLUP of sw: signal is "TRUE";
 end echotest;
 
 architecture Behavioral of echotest is
